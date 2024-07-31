@@ -2,7 +2,7 @@
   Zachary Gilmartin
   Monday, February 24, 2014
 
-  about: this is a set of funcitons for animating
+  about: this is a set of functions for animating
 */
 
 #include <stdio.h>
@@ -212,7 +212,7 @@ void animate()
     "                         ~8ONMNZ?+++++?II7$ZOOOOOOOZOZZ$$$8DDDO                                     \n"
     "                          78DNN7+===------I$ZZOO------$Z$$ZDDD~                                     \n"
     "                          =8DN8=~=+|      |----|      |DOZ$OD~                                      \n"
-    "                           ,I?I~:=+?------DDDOOZ------N8OOZZ:       You did'n say the magic word    \n"
+    "                           ,I?I~:=+?------DDDOOZ------N8OOZZ:       You didn't say the magic word   \n"
     "                            ,?+::~=+?7ZO888OZ7I$OO8NNNNNDOZ7:                                       \n"
     "                             ::::~~~=?IZOOOOIIIIOOONNNNNNDO$~                                       \n"
     "                              ,::~==?7Z8D8$II77$8DNNNNNNNN8$:                                       \n"
