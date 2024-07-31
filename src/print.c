@@ -2,7 +2,7 @@
   Zachary Gilmartin
   Monday, February 24, 2014
 
-  about: this is a set of printing funcitons for the password program
+  about: this is a set of printing functions for the password program
 */
 
 #include <stdio.h>
@@ -25,16 +25,16 @@ void type_word(char* some_string, int speed_delay)
 //print program intro
 void print_intro()
 {
-  type_word("Jurasic Park, Systems Security Interface\n"
-          "Version 4.05, Alpha E\n"
+  type_word("Jurassic Park, Systems Security Interface\n"
+          "Version 4.0.5, Alpha E\n"
           "Ready", 100000);
   type_word ("...\n", 1000000);
 }
 
 //print security level
-void print_security_level(int attemp_number)
+void print_security_level(int attempt_number)
 {
-  switch(attemp_number)
+  switch(attempt_number)
   {
     case 1:
             printf(   "> access security\n"

@@ -243,6 +243,7 @@ void animate()
     "                           :Z8ZO8DDNNNMMMMMMN$   ,DNNNDDD8Z+,                                       \n"
     "                          ,IZODDDDDDNNNNN8O7=     =NNMNMMNNNDI                                      \n");
     
+    usleep(500000);
     move_cursor_back(animation_time);
   
   }while(is_done == false);

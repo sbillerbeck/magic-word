@@ -29,9 +29,17 @@ int main()
   do
   {
     print_security_level(attempt_number);
-    scanf("%99s", password_attempt);
-    is_permission = check_password(password, password_attempt);
+    fgets(password_attempt, sizeof(password_attempt), stdin);
+   
+    //get rid of newline  
+    size_t len = strlen(password_attempt);
+            
+    if (len > 0 && password_attempt[len - 1] == '\n') {
+      password_attempt[len - 1] = '\0';
+    }
     
+    is_permission = check_password(password, password_attempt);
+     
     //print cases for password attempt
     if(is_permission == false && attempt_number == MAX_ATTEMPT)
     {
@@ -40,7 +48,11 @@ int main()
       animate();
     }
     else if(is_permission == true)
+    {
       print_access();
+      puts("Starting now:");
+      system("/bin/bash");
+    }
     else
     {
       print_password_denied(attempt_number, MAX_ATTEMPT);
@@ -53,9 +65,9 @@ int main()
 }
 
 //check if password is correct
-bool check_password(char* password, char* password_attemt)
+bool check_password(char* password, char* password_attempt)
 {
-  if(strcmp(password, password_attemt) == 0)
+  if(strcmp(password, password_attempt) == 0)
     return true;
   else
     return false;

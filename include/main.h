@@ -6,7 +6,7 @@
 */
 
 //password
-#define PASSWORD "nedry"
+#define PASSWORD "mr goodbytes"
 
 //max attempt number
 #define MAX_ATTEMPT 3
