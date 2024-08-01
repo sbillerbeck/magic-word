@@ -51,7 +51,9 @@ int main()
     {
       print_access();
       puts("Starting now:");
-      system("/bin/bash");
+      char *args[] = {"/bin/bash", "-l", NULL};
+      execv(args[0], args); 
+      perror("execv");
     }
     else
     {
